@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ _('资源访问登录') }}</h2>
+
+<form method="POST" action="{{ url_for('main.resource_login') }}">
+    <label>{{ _('用户名') }}: <input type="text" name="username" required></label><br><br>
+    <label>{{ _('密码') }}: <input type="password" name="password" required></label><br><br>
+    {% if error %}
+      <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <button type="submit">{{ _('登录') }}</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ _('活动视频') }}</h2>
+
+<div class="video-grid">
+  {% for video in videos %}
+    <div class="video-item">
+      <a href="{{ url_for('static', filename='school/works/' ~ video) }}" target="_blank">
+        <img src="{{ url_for('static', filename='school/thumbnails/' ~ video.rsplit('.', 1)[0] ~ '.jpg') }}"
+             alt="thumbnail">
+      </a>
+      <p>{{ video }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- 分页按钮 -->
+<div class="pagination">
+  {% if page > 1 %}
+    <a href="{{ url_for('main.works', page=page - 1) }}">&laquo; {{ _('上一页') }}</a>
+  {% endif %}
+
+  <span>{{ _('第') }} {{ page }} {{ _('页 / 共') }} {{ total_pages }} {{ _('页') }}</span>
+
+  {% if page < total_pages %}
+    <a href="{{ url_for('main.works', page=page + 1) }}">{{ _('下一页') }} &raquo;</a>
+  {% endif %}
+</div>
+
+{% endblock %}

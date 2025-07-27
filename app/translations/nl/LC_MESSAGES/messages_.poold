@@ -1,0 +1,302 @@
+# Dutch translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-18 00:02+0200\n"
+"PO-Revision-Date: 2025-07-18 00:03+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: nl\n"
+"Language-Team: nl <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app/templates/about.html:3
+msgid "关于我们"
+msgstr "Over ons"
+
+#: app/templates/about.html:4
+msgid "易学堂致力于在荷兰推广中文教育。"
+msgstr "Yixuetang zet zich in voor de promotie van Chinees onderwijs in Nederland."
+
+#: app/templates/index.html:3
+msgid "欢迎来到易学堂！"
+msgstr "Welkom bij Yi school"
+
+#: app/templates/index.html:4
+msgid "Dit is een Chinese weekendschool die zich richt op Chinese gezinnen."
+msgstr ""
+
+msgid "课程设置"
+msgstr "Cursusoverzicht"
+
+msgid "年龄段"
+msgstr "Leeftijdsgroep"
+
+msgid "课程名称"
+msgstr "Cursusnaam"
+
+msgid "上课时间"
+msgstr "Lesrooster"
+
+msgid "授课语言"
+msgstr "Taal"
+
+msgid "幼儿中文启蒙"
+msgstr "Chinese peuterklas"
+
+msgid "初级中文"
+msgstr "Beginners Chinees"
+
+msgid "中级中文"
+msgstr "Gemiddeld Chinees"
+
+msgid "实用中文班"
+msgstr "Praktisch Chinees"
+
+msgid "中文"
+msgstr "Chinees"
+
+msgid "中文/荷兰语"
+msgstr "Chinees/Nederlands"
+
+msgid "成人"
+msgstr "Volwassenen"
+
+msgid "课程设置"
+msgstr "Cursusoverzicht"
+
+msgid "年龄段"
+msgstr "Leeftijdsgroep"
+
+msgid "课程名称"
+msgstr "Cursusnaam"
+
+msgid "上课时间"
+msgstr "Lesrooster"
+
+msgid "授课语言"
+msgstr "Taal"
+
+msgid "幼儿中文启蒙"
+msgstr "Chinese peuterklas"
+
+msgid "常规中文班"
+msgstr "Standaard Chinese les"
+
+msgid "少年中文班"
+msgstr "Chinese les voor jongeren"
+
+msgid "实用中文班"
+msgstr "Praktisch Chinees"
+
+msgid "荷兰语班"
+msgstr "Nederlandse taalcursus"
+
+msgid "《黄帝内经》入门班"
+msgstr "Introductiecursus op de “Huangdi Neijing”"
+
+msgid "中文"
+msgstr "Chinees"
+
+msgid "协商"
+msgstr "Overleg"
+
+msgid "中文/荷兰语"
+msgstr "Chinees/Nederlands"
+
+msgid "成人"
+msgstr "Volwassenen"
+
+msgid "在线报名"
+msgstr "Inschrijven"
+
+msgid "姓名"
+msgstr "Naam"
+
+msgid "年龄"
+msgstr "Leeftijd"
+
+msgid "联系方式"
+msgstr "Contact"
+
+msgid "选择课程"
+msgstr "Cursuskeuze"
+
+msgid "备注"
+msgstr "Opmerkingen"
+
+msgid "提交"
+msgstr "Verzenden"
+
+msgid "欢迎来到易学堂"
+msgstr "Welkom bij YiXueTang"
+
+msgid "我们致力于为海外华人儿童和家庭提供专业、温暖的中文教育。"
+msgstr "Wij zetten ons in om professionele en warme Chinees onderwijs te bieden aan Chinese kinderen en gezinnen in het buitenland."
+
+msgid "立即报名"
+msgstr "Schrijf je nu in"
+
+msgid "专业教师"
+msgstr "Professionele leraren"
+
+msgid "经验丰富的中文教师团队，因材施教。"
+msgstr "Ervaren team van Chinese leraren, lesgeven op maat."
+
+msgid "沉浸式教学"
+msgstr "Onderdompelend onderwijs"
+
+msgid "通过游戏、活动、绘本，让中文自然融入日常。"
+msgstr "Chinese taal op een natuurlijke manier via spelletjes, verhalen en activiteiten."
+
+msgid "中荷文化融合"
+msgstr "Chinese en Nederlandse cultuur"
+
+msgid "培养双语能力，尊重文化多样性。"
+msgstr "Tweetaligheid bevorderen, culturele diversiteit respecteren."
+
+msgid "查看课程"
+msgstr "Cursusoverzicht"
+
+msgid "在线报名"
+msgstr "Inschrijven"
+
+msgid "关于我们"
+msgstr "Over ons"
+
+msgid "我们的教师"
+msgstr "Ons docententeam"
+
+msgid "教师团队"
+msgstr "Docententeam"
+
+msgid "赵艳老师"
+msgstr "Mevrouw Zhao"
+
+msgid "曾就读荷兰阿姆斯特丹经济学院(HES Amsterdam), 选科中文;2008年参加荷兰中文教育主办的荷兰中文教师培训;2009参加温州大学海外教师培训;2018年完成了莱顿大学的荷兰中文教师培训。喜欢小朋友,有耐心。善于激发小朋友对学中文的兴趣。"
+msgstr "Afgestudeerd aan HES Amsterdam met Chinees als keuzevak; in 2008 deelgenomen aan de training voor Chinese docenten georganiseerd door Chinese onderwijs in Nederland; in 2009 gevolgd bij de Wenzhou Universiteit; in 2018 afgerond bij de Universiteit Leiden. Houdt van kinderen, geduldig en goed in het motiveren van kinderen om Chinees te leren."
+
+msgid "毕业于河南师范大学，是一位亲切、有耐心、热爱儿童教育的华文老师。 我喜欢用轻松、有趣的方式引导孩子，激发孩子的表达兴趣和语言自信。 我相信每个孩子都有独特的语言天赋，只要用心陪伴、细心引导，就能帮助他们爱上中文，稳步进步。 欢迎和我一起，让孩子在快乐中学好中文，爱上这门美丽的语言！"
+msgstr "Afgestudeerd aan de Henan Normal University, een vriendelijke, geduldige en kindgerichte docent Chinees. Ik begeleid kinderen op een speelse en interessante manier, zodat ze meer vertrouwen krijgen in hun taalvaardigheid en expressie. Ik geloof dat elk kind een uniek talent heeft voor taal. Met geduldige begeleiding kunnen ze Chinees leuk gaan vinden en goed leren. Laten we samen werken aan een plezierige leerervaring!"
+
+msgid "陈彬彬老师"
+msgstr "Mevrouw Chen"
+
+msgid "周晴老师"
+msgstr "Mevrouw Zhou"
+
+msgid "孙康老师"
+msgstr "Mevrouw Sun"
+
+msgid "宁子涵老师"
+msgstr "Meester Ning"
+
+msgid "毕业于南京大学中文系，从事海外华文教育二十余年，曾获国务院侨办颁发的"优秀海外华文教师"奖。在荷兰中学任中文老师多年。北京厚朴中医筑基班首期学员，上海艺恩整理整理师。致力传播优秀中国传统文化。"
+msgstr "Afgestudeerd aan de Nanjing Universiteit (afdeling Chinese taal en literatuur), met meer dan 20 jaar ervaring in het Chinees onderwijs in het buitenland. Ontvanger van de “Uitstekende Overzeese Chinese Leraar” prijs van het Overzeese Chinese Zakenbureau. Al jarenlang docent Chinees op middelbare scholen in Nederland. Eerste lichting student aan het basiscurriculum van Houtpo Chinese Geneeskunde in Beijing, en professional organizer in Shanghai. Toegewijd aan de verspreiding van traditionele Chinese cultuur."
+
+msgid "拥有近二十年海外中文教学经验，有丰富的教学经验，课堂气氛活跃。希望可以通过自己的教学让更多的孩子爱上中文。"
+msgstr "Bijna 20 jaar ervaring in het geven van Chinees onderwijs in het buitenland. De lessen zijn levendig en interactief. Ik hoop dat meer kinderen door mijn lessen van Chinees gaan houden."
+
+msgid "就读于乌特勒支大学青少年儿童心理学，希望越来越多的华人孩子们学会中文，爱上中文！"
+msgstr "Student kinder- en jeugdpsychologie aan de Universiteit Utrecht. Ik hoop dat steeds meer Chinese kinderen Chinees leren en ervan gaan houden!"
+
+msgid "教学成果"
+msgstr "Lesresultaten"
+
+msgid "报名记录"
+msgstr "Inschrijvingen"
+
+msgid "编号"
+msgstr "Nr."
+
+msgid "姓名"
+msgstr "Naam"
+
+msgid "年龄"
+msgstr "Leeftijd"
+
+msgid "联系方式"
+msgstr "Contact"
+
+msgid "课程"
+msgstr "Cursus"
+
+msgid "备注"
+msgstr "Opmerkingen"
+
+msgid "学生园地"
+msgstr "Studentenhoek"
+
+msgid "活动视频"
+msgstr "Activiteitsvideo's"
+
+msgid "您的浏览器不支持视频播放。"
+msgstr "Uw browser ondersteunt geen videoweergave."
+
+msgid "学生园地"
+msgstr "Studentenhoek"
+
+msgid "学校相册"
+msgstr "Schoolfoto's"
+
+msgid "学生作品展示"
+msgstr "Studentenwerk"
+
+msgid "活动视频"
+msgstr "Activiteitsvideo's"
+
+msgid "学生作文"
+msgstr "Studentenopstellen"
+
+msgid "表演视频"
+msgstr "Toespraken / Voordrachten"
+
+msgid "教学资源"
+msgstr "Onderwijsmaterialen"
+
+msgid "教材"
+msgstr "Lesboeken"
+
+msgid "学习视频"
+msgstr "Leervideo's"
+
+msgid "教学视频"
+msgstr "Lesvideo's"
+
+msgid "需要登录"
+msgstr "Inloggen vereist"
+
+msgid "资源访问登录"
+msgstr "Toegang tot materiaal"
+
+msgid "退出登录"
+msgstr "Uitloggen"
+
+msgid "登录访问"
+msgstr "Inloggen"
+
+msgid "教学素材"
+msgstr "Lesmateriaal"
+
+msgid "请登录后查看或下载资源。"
+msgstr "Log in om bestanden te bekijken of te downloaden."
+
+msgid "观看"
+msgstr "Bekijken"
+
+msgid "下载"
+msgstr "Downloaden"
+
+msgid "首页"
+msgstr "Home"
+
+msgid "学校地址"
+msgstr "Adres"

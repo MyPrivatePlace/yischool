@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="{{ url_for('main.admin_dashboard') }}" class="btn btn-secondary mb-3">← 返回管理首页</a>
+
+<div class="container mt-5">
+  <h2>资源上传</h2>
+  <p>form debug 渲染成功</p>
+
+  <form method="POST" enctype="multipart/form-data" action="{{ url_for('main.upload_resource') }}">
+    <div class="form-group">
+      <label>资源类别：</label>
+      <select name="category" class="form-control" required>
+        <option value="textbooks">教材</option>
+        <option value="study_videos">学习视频</option>
+        <option value="teaching_videos">教学视频</option>
+        <option value="ourvideos">教学素材</option>
+      </select>
+    </div>
+    <div class="form-group mt-3">
+      <label>选择文件：</label>
+      <input type="file" name="file" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">上传</button>
+  </form>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, msg in messages %}
+        <div class="alert alert-{{ category }} mt-3">{{ msg }}</div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+</div>
+{% endblock %}

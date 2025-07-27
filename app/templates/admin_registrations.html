@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ url_for('main.admin_dashboard') }}" class="btn btn-secondary mb-3">← 返回管理首页</a>
+<h2>报名信息</h2>
+<a href="{{ url_for('main.export_registrations') }}" class="quick-btn" style="float: right;">
+  {{ _('导出 CSV') }}
+</a>
+
+<h2>{{ _('报名记录') }}</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>{{ _('编号') }}</th>
+      <th>{{ _('姓名') }}</th>
+      <th>{{ _('年龄') }}</th>
+      <th>{{ _('联系方式') }}</th>
+      <th>{{ _('课程') }}</th>
+      <th>{{ _('备注') }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in records %}
+    <tr>
+      <td>{{ r.id }}</td>
+      <td>{{ r.name }}</td>
+      <td>{{ r.age }}</td>
+      <td>{{ r.contact }}</td>
+      <td>{{ r.course }}</td>
+      <td>{{ r.note }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

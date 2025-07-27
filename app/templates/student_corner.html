@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ _('学生园地') }}</h2>
+
+<!-- 图片展示 -->
+<section class="gallery">
+  <img src="{{ url_for('static', filename='images/student1.jpg') }}" alt="学生1">
+  <img src="{{ url_for('static', filename='images/student2.jpg') }}" alt="学生2">
+  <img src="{{ url_for('static', filename='images/student3.jpg') }}" alt="学生3">
+  <img src="{{ url_for('static', filename='images/student4.jpg') }}" alt="学生4">
+</section>
+
+<!-- 视频展示 -->
+<section class="videos">
+  <h3>{{ _('活动视频') }}</h3>
+
+  <!-- 示例: YouTube 嵌入 -->
+  <div class="video-box">
+    <iframe src="https://www.youtube.com/embed/视频ID" frameborder="0"
+            allowfullscreen></iframe>
+  </div>
+
+  <!-- 示例: 本地视频 -->
+  <div class="video-box">
+    <video controls>
+      <source src="{{ url_for('static', filename='videos/sample.mp4') }}" type="video/mp4">
+      {{ _('您的浏览器不支持视频播放。') }}
+    </video>
+  </div>
+</section>
+
+{% endblock %}

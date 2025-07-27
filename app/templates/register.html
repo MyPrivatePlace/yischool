@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ _('在线报名') }}</h2>
+<form method="POST" action="{{ url_for('main.register') }}">
+    <label>{{ _('姓名') }}*: <input type="text" name="name" required></label><br><br>
+    <label>{{ _('年龄') }}: <input type="number" name="age" required></label><br><br>
+    <label>{{ _('联系方式') }}*: <input type="text" name="contact" required></label><br><br>
+    <label>{{ _('选择课程') }}:
+        <select name="course">
+            <option>{{ _('幼儿中文启蒙') }}</option>
+            <option>{{ _('常规中文班') }}</option>
+            <option>{{ _('少年中文班') }}</option>
+            <option>{{ _('实用中文班') }}</option>
+            <option>{{ _('荷兰语班') }}</option>
+            <option>{{ _('《黄帝内经》入门班') }}</option>
+        </select>
+    </label><br><br>
+    <label>{{ _('备注') }}:<br>
+        <textarea name="note" rows="3"></textarea>
+    </label><br><br>
+    <button type="submit">{{ _('提交') }}</button>
+</form>
+{% endblock %}

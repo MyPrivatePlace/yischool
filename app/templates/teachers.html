@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ _('我们的教师') }}</h2>
+
+<div class="teacher-grid">
+
+  <div class="teacher-card">
+    <img src="{{ url_for('static', filename='images/teachers/zhao.jpg') }}" alt="Teacher Zhao">
+    <h3>{{ _('赵艳老师') }}</h3>
+    <p>{{ _('毕业于南京大学中文系，从事海外华文教育二十余年，曾获国务院侨办颁发的"优秀海外华文教师"奖。在荷兰中学任中文老师多年。北京厚朴中医筑基班首期学员，上海艺恩整理整理师。致力传播优秀中国传统文化。') }}</p>
+  </div>
+
+  <div class="teacher-card">
+    <img src="{{ url_for('static', filename='images/teachers/chen.jpg') }}" alt="Teacher Chen">
+    <h3>{{ _('陈彬彬老师') }}</h3>
+    <p>{{ _('曾就读荷兰阿姆斯特丹经济学院(HES Amsterdam), 选科中文;2008年参加荷兰中文教育主办的荷兰中文教师培训;2009参加温州大学海外教师培训;2018年完成了莱顿大学的荷兰中文教师培训。喜欢小朋友,有耐心。善于激发小朋友对学中文的兴趣。') }}</p>
+  </div>
+
+  <div class="teacher-card">
+    <img src="{{ url_for('static', filename='images/teachers/zhou.jpg') }}" alt="Teacher Zhou">
+    <h3>{{ _('周晴老师') }}</h3>
+    <p>{{ _('大家好，我是周晴，毕业于河南师范大学，是一位亲切、有耐心、热爱儿童教育的华文老师。我喜欢用轻松、有趣的方式引导孩子，激发孩子的表达兴趣和语言自信。我相信每个孩子都有独特的语言天赋，只要用心陪伴、细心引导，就能帮助他们爱上中文，稳步进步。欢迎和我一起，让孩子在快乐中学好中文，爱上这门美丽的语言！') }}</p>
+  </div> 
+
+  <div class="teacher-card">
+    <img src="{{ url_for('static', filename='images/teachers/sun.jpg') }}" alt="Teacher Sun">
+    <h3>{{ _('孙康老师') }}</h3>
+    <p>{{ _('拥有近二十年海外中文教学经验，有丰富的教学经验，课堂气氛活跃。希望可以通过自己的教学让更多的孩子爱上中文。') }}</p>
+  </div>
+
+  <div class="teacher-card">
+    <img src="{{ url_for('static', filename='images/teachers/ning.jpg') }}" alt="Teacher Ning">
+    <h3>{{ _('宁子涵老师') }}</h3>
+    <p>{{ _('就读于乌特勒支大学青少年儿童心理学，希望越来越多的华人孩子们学会中文，爱上中文！') }}</p>
+  </div>
+
+
+</div>
+
+{% endblock %}

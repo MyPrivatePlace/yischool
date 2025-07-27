@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="{{ g.locale }}">
+<head>
+    <meta charset="UTF-8">
+    <title>易学堂</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</head>
+<body>
+    <header>
+        {% set current_lang = request.args.get('lang', 'zh') %}
+        <nav>
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" class="logo">
+            <ul>
+                <li><a href="{{ url_for('main.index') }}">{{ _('首页') }}</a></li>
+                <li><a href="{{ url_for('main.courses') }}">{{ _('课程设置') }}</a></li>
+                <li><a href="{{ url_for('main.register') }}">{{ _('在线报名') }}</a></li>
+                <li class="dropdown">
+                    <a href="#">{{ _('学生园地') }}</a>
+                    <ul class="dropdown-content">
+                        <li><a href="{{ url_for('main.album') }}">{{ _('学校相册') }}</a></li>
+                        <li><a href="{{ url_for('main.works') }}">{{ _('学生作品展示') }}</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#">{{ _('教学资源') }}</a>
+                <ul class="dropdown-content">
+                    <li><a href="{{ url_for('main.resource_textbooks') }}">&nbsp;&nbsp;{{ _('教材') }}</a></li>
+                    <li><a href="{{ url_for('main.resource_study_videos') }}">&nbsp;&nbsp;{{ _('学习视频') }}</a></li>
+                    <li><a href="{{ url_for('main.resource_teaching_videos') }}">&nbsp;&nbsp;{{ _('教学视频') }}</a></li>
+                    <li><a href="{{ url_for('main.resource_ourvideos') }}">&nbsp;&nbsp;{{ _('教学素材') }}</a></li>
+                </ul>
+                </li>
+              
+                <li class="dropdown">
+                <a href="#">{{ _('关于我们') }}</a>
+                <ul class="dropdown-content">
+                    <li><a href="{{ url_for('main.about') }}">&nbsp;&nbsp;{{ _('学校地址') }}</a></li>
+                    <li><a href="{{ url_for('main.teachers') }}">&nbsp;&nbsp;{{ _('教师团队') }}</a></li>
+                    
+                </ul>
+                </li>
+                    <a href="{{ url_for('main.set_language', lang_code='zh') }}">中文</a> |
+                    <a href="{{ url_for('main.set_language', lang_code='nl') }}">Nederlands</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <!-- jQuery（Lightbox2 依赖） -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <!-- 页脚 -->
+    <footer class="footer bg-dark text-white mt-5 py-3">
+    <div class="container text-center">
+        <p>© {{ _('易学堂') }} 2025. {{ _('版权所有') }}.</p>
+        <p>{{ _('地址：荷兰 · Zeist') }} | Email: yischoolzeist@gmail.com</p>
+    </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: yischool-web
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python run.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        value: yischool-super-secret-key

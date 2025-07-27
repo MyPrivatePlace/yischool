@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- 顶部欢迎区 -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>{{ _('欢迎来到易学堂') }}</h1>
+    <p>{{ _('易学堂 — 知行合一，伴你成长！<br/>在这里，我们不仅教授语言，更搭建起沟通文化的桥梁。<br/>我们专注于向华裔华侨子弟提供系统的中文教育。也欢迎对中文感兴趣的荷兰人，带他们走进汉语的世界。<br/>我们还为新移民提供荷兰语课程，帮助他们尽快掌握日常交流技能，融入社区、融入社会，开启新生活。<br/>易学堂，语言与文化的家园，成长与梦想的起点。') }}</p>
+    <a href="{{ url_for('main.register') }}" class="btn-primary">{{ _('立即报名') }}</a>
+  </div>
+</section>
+
+<!-- 教学成果轮播图 -->
+<section class="slider-section">
+  <h2>{{ _('校园活动') }}</h2>
+
+  <div class="slider-wrapper">
+    <div class="slider-track" id="sliderTrack">
+      <img src="{{ url_for('static', filename='images/slider1.jpg') }}" alt="图1">
+      <img src="{{ url_for('static', filename='images/slider2.jpg') }}" alt="图2">
+      <img src="{{ url_for('static', filename='images/slider3.jpg') }}" alt="图3">
+      <img src="{{ url_for('static', filename='images/slider4.jpg') }}" alt="图4">
+      <img src="{{ url_for('static', filename='images/slider5.jpg') }}" alt="图5">
+
+      <!-- 复制一份用于无缝滚动 -->
+      <img src="{{ url_for('static', filename='images/slider1.jpg') }}" alt="图1">
+      <img src="{{ url_for('static', filename='images/slider2.jpg') }}" alt="图2">
+      <img src="{{ url_for('static', filename='images/slider3.jpg') }}" alt="图3">
+      <img src="{{ url_for('static', filename='images/slider4.jpg') }}" alt="图4">
+      <img src="{{ url_for('static', filename='images/slider5.jpg') }}" alt="图5">
+    </div>
+  </div>
+</section>
+
+<!-- 学校特色简介 -->
+<section class="features">
+  <div class="feature">
+    <h3>{{ _('专业教师') }}</h3>
+    <p>{{ _('经验丰富的中文教师团队，因材施教。') }}</p>
+  </div>
+  <div class="feature">
+    <h3>{{ _('沉浸式教学') }}</h3>
+    <p>{{ _('通过游戏、活动、绘本，让中文自然融入日常。') }}</p>
+  </div>
+  <div class="feature">
+    <h3>{{ _('中荷文化融合') }}</h3>
+    <p>{{ _('培养双语能力，尊重文化多样性。') }}</p>
+  </div>
+</section>
+
+<!-- 快速入口 -->
+<section class="quick-links">
+  <a href="{{ url_for('main.courses') }}" class="quick-btn">{{ _('查看课程') }}</a>
+  <a href="{{ url_for('main.register') }}" class="quick-btn">{{ _('在线报名') }}</a>
+  <a href="{{ url_for('main.about') }}" class="quick-btn">{{ _('关于我们') }}</a>
+</section>
+
+{% endblock %}

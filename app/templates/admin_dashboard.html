@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>管理员控制台</h2>
+<ul>
+  <li><a href="{{ url_for('main.view_registrations') }}">查看报名记录</a></li>
+  <li><a href="{{ url_for('main.admin_resource_users') }}">教师用户管理</a></li>
+  <li><a href="{{ url_for('main.upload_resource') }}">资源上传</a></li>
+</ul>
+<a href="{{ url_for('main.admin_logout') }}" class="btn btn-outline-danger float-end">退出</a>
+
+{% endblock %}

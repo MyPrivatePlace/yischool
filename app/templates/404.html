@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mt-5">
+  <h2>😢 页面未找到 (404)</h2>
+  <p>您访问的页面不存在或已被删除。</p>
+  <a href="{{ url_for('main.index') }}" class="btn btn-primary">返回首页</a>
+</div>
+{% endblock %}

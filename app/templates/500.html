@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mt-5">
+  <h2>🚨 服务器错误 (500)</h2>
+  <p>发生了一些错误，请稍后再试。</p>
+  <a href="{{ url_for('main.index') }}" class="btn btn-primary">返回首页</a>
+</div>
+{% endblock %}
