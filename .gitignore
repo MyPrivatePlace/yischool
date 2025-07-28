@@ -1,0 +1,27 @@
+# 忽略所有视频文件
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# 忽略资源上传目录
+/static/resources/*
+
+# 忽略数据库备份等私密文件
+*.sqlite3
+*.db
+*.bak
+
+# 忽略 Python 虚拟环境
+venv/
+__pycache__/
+*.pyc
+
+
+# 忽略日志
+*.log
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
