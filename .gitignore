@@ -6,6 +6,7 @@
 
 # 忽略资源上传目录
 /static/resources/*
+/static/school/*
 
 # 忽略数据库备份等私密文件
 *.sqlite3
