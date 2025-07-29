@@ -5,9 +5,11 @@ services:
       - type: python
         PYTHON_VERSION: 3.11.9
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "python run.py"
+    startCommand: "gunicorn 'app:create_app()'"
     envVars:
       - key: FLASK_ENV
         value: production
       - key: SECRET_KEY
         value: yischool-super-secret-key
+      - key: DATABASE_URL
+        value: dpg-d240o9re5dus73b682j0-a
