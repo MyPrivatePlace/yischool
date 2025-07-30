@@ -12,4 +12,4 @@ services:
       - key: SECRET_KEY
         value: yischool-super-secret-key
       - key: DATABASE_URL
-        value: dpg-d240o9re5dus73b682j0-a
+        value: postgresql://kang:3OhcWpn07pns7QrMD3P6W9LtEzvQThTM@dpg-d240o9re5dus73b682j0-a/yischool
