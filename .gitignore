@@ -9,8 +9,8 @@
 /static/school/*
 
 # 忽略私密文件
-admin_users.json
-resource_users.json
+#admin_users.json
+#resource_users.json
 
 # 忽略 Python 虚拟环境
 venv/
