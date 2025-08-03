@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "username": "yzhao",
+    "password_hash": "scrypt:32768:8:1$CgUm6pGsjeTjcYTL$0acd7dbc5d0933f94d3429a794b55d67d122cc9c47070dc6590e80b1f5db24ed37681f388f772a74d1b06c1804066b2ef617ca69e1d23548e57c9ab07454e22c"
+  },
+  {
+    "id": 2,
+    "username": "bbchen",
+    "password_hash": "scrypt:32768:8:1$E11RUvbfl1sW0ybr$585cb61785d0a512484366704157809b6108e5af9ec95039b83c5d8d57bef2a6665fb2195b32ff483526ce4843218629fdf0870d0fafb5c713bfbb025d868f8b"
+  },
+  {
+    "id": 3,
+    "username": "qzhou",
+    "password_hash": "scrypt:32768:8:1$BNsmIaM1IvXWYuZe$262771ccc5554f472020522ea0a8774d809eada086407910ad36a06b34b2370da55896dee959f147f7bb76e08fd1c61b1750d3a2c2016916b9d5075f5d64ecbf"
+  },
+  {
+    "id": 4,
+    "username": "zhning",
+    "password_hash": "scrypt:32768:8:1$2T40sRImzUqIF5DT$d20e1a46dab734d23fdfa7a39d2b2e2498d6572363c0b244d012f4b84480880045d3ed494c5f47ec2e8218a1ffac96e35270c1c172a2bfb15f3875de12fe8563"
+  },
+  {
+    "id": 5,
+    "username": "kang",
+    "password_hash": "scrypt:32768:8:1$WMi10WZjGlwXtAMM$86f9e3140dc2c9eb03585a8002e1e5e85748acf32196e4c00d4c29fa6d91eaf2542cec0349667329802264705f7215f5de6ea262611b4bd4dccbf8cf55000af8"
+  }
+]
