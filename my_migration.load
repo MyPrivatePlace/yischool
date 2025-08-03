@@ -1,0 +1,9 @@
+LOAD DATABASE
+     FROM mysql://kang:Welkom123@localhost/yischool
+     INTO postgresql://kang:OhcWpn07pns7QrMD3P6W9LtEzvQThTM@dpg-d240o9re5dus73b682j0-a.frankfurt-postgres.render.com/yischool
+ WITH include no drop, create tables, create indexes, reset sequences
+
+ SET work_mem to '16MB',
+     maintenance_work_mem to '512 MB';
+
+ ALTER SCHEMA 'mydb' RENAME TO 'public';

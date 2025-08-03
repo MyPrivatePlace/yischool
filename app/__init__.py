@@ -1,17 +1,16 @@
 from flask import Flask, request, session
 from flask_babel import Babel, get_locale
 from config import Config
-from flask_sqlalchemy import SQLAlchemy
 from flask import render_template
 
 babel = Babel()
-db = SQLAlchemy()
+#db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
-    db.init_app(app)
+    #db.init_app(app)
     babel.init_app(app, locale_selector=select_locale)
     
     from .routes import main

@@ -6,8 +6,6 @@
   {{ _('导出 CSV') }}
 </a>
 
-<h2>{{ _('报名记录') }}</h2>
-
 <table>
   <thead>
     <tr>
@@ -22,12 +20,12 @@
   <tbody>
     {% for r in records %}
     <tr>
-      <td>{{ r.id }}</td>
-      <td>{{ r.name }}</td>
-      <td>{{ r.age }}</td>
-      <td>{{ r.contact }}</td>
-      <td>{{ r.course }}</td>
-      <td>{{ r.note }}</td>
+      <td>{{ r[0] }}</td>
+      <td>{{ r[1] }}</td>
+      <td>{{ r[2] }}</td>
+      <td>{{ r[3] }}</td>
+      <td>{{ r[4] }}</td>
+      <td>{{ r[5] }}</td>
     </tr>
     {% endfor %}
   </tbody>
