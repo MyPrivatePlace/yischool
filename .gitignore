@@ -8,10 +8,9 @@
 /static/resources/*
 /static/school/*
 
-# 忽略数据库备份等私密文件
-*.sqlite3
-*.db
-*.bak
+# 忽略私密文件
+admin_users.json
+resource_users.json
 
 # 忽略 Python 虚拟环境
 venv/
@@ -25,4 +24,5 @@ __pycache__/
 # 忽略系统文件
 .DS_Store
 Thumbs.db
+
 
