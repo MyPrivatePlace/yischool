@@ -152,11 +152,17 @@ msgstr "Docententeam"
 msgid "赵艳老师"
 msgstr "Mevrouw Zhao"
 
-msgid "曾就读荷兰阿姆斯特丹经济学院(HES Amsterdam), 选科中文;2008年参加荷兰中文教育主办的荷兰中文教师培训;2009参加温州大学海外教师培训;2018年完成了莱顿大学的荷兰中文教师培训。喜欢小朋友,有耐心。善于激发小朋友对学中文的兴趣。"
-msgstr "Afgestudeerd aan HES Amsterdam met Chinees als keuzevak; in 2008 deelgenomen aan de training voor Chinese docenten georganiseerd door Chinese onderwijs in Nederland; in 2009 gevolgd bij de Wenzhou Universiteit; in 2018 afgerond bij de Universiteit Leiden. Houdt van kinderen, geduldig en goed in het motiveren van kinderen om Chinees te leren."
+msgid "龙妍灵老师"
+msgstr "Mevrouw Long"
 
-msgid "大家好，我是周晴，毕业于河南师范大学，是一位亲切、有耐心、热爱儿童教育的华文老师。我喜欢用轻松、有趣的方式引导孩子，激发孩子的表达兴趣和语言自信。我相信每个孩子都有独特的语言天赋，只要用心陪伴、细心引导，就能帮助他们爱上中文，稳步进步。欢迎和我一起，让孩子在快乐中学好中文，爱上这门美丽的语言！"
-msgstr "Afgestudeerd aan de Henan Normal University, een vriendelijke, geduldige en kindgerichte docent Chinees. Ik begeleid kinderen op een speelse en interessante manier, zodat ze meer vertrouwen krijgen in hun taalvaardigheid en expressie. Ik geloof dat elk kind een uniek talent heeft voor taal. Met geduldige begeleiding kunnen ze Chinees leuk gaan vinden en goed leren. Laten we samen werken aan een plezierige leerervaring!"
+msgid "王颖杰老师"
+msgstr "Mevrouw Wang"
+
+msgid "曾就读于荷兰高等经济学院HES Amsterdam，选修中文。多次参加海外及本土华文教师培训，担纲融入社会及成人汉语课程教学。"
+msgstr "Studeerde aan de Hogeschool voor Economische Studie Amsterdam (HES Amsterdam), heeft Chinees als keuzevak gevolgd. Ze heeft meermaals deelgenomen aan docent training voor Chinese leraren in het buitenland en op eigen bodem, en is verantwoordelijk voor de onderwijsopdrachten van cursussen over integratie in de samenleving en Chinees voor volwassenen."
+
+msgid "毕业于河南师范大学，热爱儿童教育，擅长用轻松、有趣的方式引导孩子，激发孩子的表达兴趣和语言自信。"
+msgstr "Diplomaat van de Universiteit van Henan voor Lerarenopleiding, houdt van het onderwijs van kinderen en is bedreven in het leiden van kinderen op een ontspannen en leuk manier, waardoor de interesse van kinderen in het uiten en hun taalconfidentie gestimuleerd worden."
 
 msgid "陈彬彬老师"
 msgstr "Mevrouw Chen"
@@ -170,17 +176,26 @@ msgstr "Mevrouw Sun"
 msgid "宁子涵老师"
 msgstr "Meester Ning"
 
-msgid "毕业于南京大学中文系，从事海外华文教育二十余年，曾获国务院侨办颁发的"优秀海外华文教师"奖。在荷兰中学任中文老师多年。北京厚朴中医筑基班首期学员，上海艺恩整理整理师。致力传播优秀中国传统文化。"
-msgstr "Afgestudeerd aan de Nanjing Universiteit (afdeling Chinese taal en literatuur), met meer dan 20 jaar ervaring in het Chinees onderwijs in het buitenland. Ontvanger van de “Uitstekende Overzeese Chinese Leraar” prijs van het Overzeese Chinese Zakenbureau. Al jarenlang docent Chinees op middelbare scholen in Nederland. Eerste lichting student aan het basiscurriculum van Houtpo Chinese Geneeskunde in Beijing, en professional organizer in Shanghai. Toegewijd aan de verspreiding van traditionele Chinese cultuur."
+msgid "毕业于南大中文系，从事海外华文教育二十多年，教学经验丰富，致力传播中国传统文化。 "
+msgstr "Diplomaat van de Afdeling Chinees van de Universiteit van Nanjing, heeft meer dan twintig jaar ervaring in het onderwijs van het Chinees in het buitenland, bezit veel onderwijservaring en is toegewijd aan de verspreiding van de traditionele Chinese cultuur."
 
-msgid "拥有近二十年海外中文教学经验，有丰富的教学经验，课堂气氛活跃。希望可以通过自己的教学让更多的孩子爱上中文。"
-msgstr "Bijna 20 jaar ervaring in het geven van Chinees onderwijs in het buitenland. De lessen zijn levendig en interactief. Ik hoop dat meer kinderen door mijn lessen van Chinees gaan houden."
+msgid "毕业于中科院，从事海外华文教育近二十年，教学经验丰富，能不断启发孩子们的创造想象力,让孩子们更有兴趣学习中文。"
+msgstr "Diplomaat van de Chinese Akademie van Wetenschappen, heeft bijna twintig jaar ervaring in het onderwijs van het Chinees in het buitenland. Ze heeft veel onderwijservaring en kan de creatieve verbeelding van kinderen voortdurend stimuleren, waardoor kinderen meer interesse krijgen in het leren van het Chinees."
 
-msgid "就读于乌特勒支大学青少年儿童心理学，希望越来越多的华人孩子们学会中文，爱上中文！"
-msgstr "Student kinder- en jeugdpsychologie aan de Universiteit Utrecht. Ik hoop dat steeds meer Chinese kinderen Chinees leren en ervan gaan houden!"
+msgid "就读于乌特勒支大学青少年儿童心理，热爱教学，希望通过自己的努力，让越来越多的华人孩子们学会中文。"
+msgstr "Student psychologie van tieners en kinderen aan de Universiteit van Utrecht, houdt van onderwijs en hoopte dat met zijn inspanningen steeds meer Chinese kinderen het Chinees graag willen leren."
+
+msgid "毕业于沈阳药科大学药学系及荷兰青白中医学院，致力传播中华文化，推广应用中医理论知识。"
+msgstr "Diplomaat van de Afdeling Farmacie van de Shenyang Pharmaceutische Universiteit en de Nederlandse Qingbai Chinese Geneeskunde Akademie, is toegewijd aan de verspreiding van de Chinese cultuur en de popularisering en toepassing van kennis over de theorie van de Chinese geneeskunde."
+
+msgid "乌特勒支大学跨文化交际硕士专业，本科毕业于四川外国语大学汉语国际教育专业，热爱汉语教学，在中国有任教中文经验。"
+msgstr "Heeft een masterdiploma in interculturele communicatie aan de Universiteit van Utrecht en een bachelor diploma in internationaal onderwijs van het Chinees aan de Sichuan International Studies University. Ze houdt van het onderwijs van het Chinees en heeft ervaring met het geven van Chineseles in China."
 
 msgid "教学成果"
 msgstr "Lesresultaten"
+
+msgid "学校校历"
+msgstr "Lesrooster"
 
 msgid "报名记录"
 msgstr "Inschrijvingen"
@@ -190,7 +205,6 @@ msgstr "Nr."
 
 msgid "课程"
 msgstr "Cursus"
-
 
 msgid "学生园地"
 msgstr "Studentenhoek"

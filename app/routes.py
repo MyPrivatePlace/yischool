@@ -23,6 +23,10 @@ def about():
 def courses():
     return render_template('courses.html')
 
+@main.route('/lesrooster')
+def lesrooster():
+    return render_template('lesrooster.html')
+
 import os, csv
 from flask import request, redirect, url_for, session, render_template
 from flask_babel import _

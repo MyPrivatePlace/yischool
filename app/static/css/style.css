@@ -372,6 +372,14 @@ button:hover {
     border-radius: 8px;
 }
 
+.lesrooster img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
 /* 页脚 */
 footer {
     background: #f2f2f2;
