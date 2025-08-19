@@ -6,7 +6,7 @@
 
 # 忽略资源上传目录
 /static/resources/*
-/static/school/*
+#/static/school/*
 
 # 忽略私密文件
 #admin_users.json
