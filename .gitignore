@@ -5,7 +5,7 @@
 *.mkv
 
 # 忽略资源上传目录
-/static/resources/*
+#/static/resources/*
 #/static/school/*
 
 # 忽略私密文件
