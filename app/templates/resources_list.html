@@ -30,7 +30,7 @@
   </div>
 {% else %}
   {% if not logged_in %}
-    <p>{{ _('请登录后查看或下载资源。') }}</p>
+    <p>{{ _('请登录后查看或下载资源 。') }}</p>
     <a href="{{ url_for('main.resource_login') }}" class="btn-primary">{{ _('登录访问') }}</a>
   {% endif %}
 

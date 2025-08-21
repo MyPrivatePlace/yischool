@@ -176,13 +176,18 @@ def list_files_by_folder(up_folder,folder_name):
 
 @main.route('/resources/textbooks')
 def resource_textbooks():
+    if not session.get('resource_user_logged_in'):
+        return redirect(url_for('main.resource_login', next=request.path))
     files = list_files_by_folder('resources','textbooks')
     logged_in = session.get('resource_user_logged_in', False)
+
     return render_template('resources_list.html', category='教材', files=files,
                            folder='textbooks', logged_in=logged_in)
 
 @main.route('/resources/study_videos')
 def resource_study_videos():
+    if not session.get('resource_user_logged_in'):
+        return redirect(url_for('main.resource_login', next=request.path))
     files = list_files_by_folder('resources','study_videos')
     logged_in = session.get('resource_user_logged_in', False)
     return render_template('resources_list.html', category='学习视频', files=files,
@@ -190,6 +195,8 @@ def resource_study_videos():
 
 @main.route('/resources/teaching_videos')
 def resource_teaching_videos():
+    if not session.get('resource_user_logged_in'):
+        return redirect(url_for('main.resource_login', next=request.path))
     files = list_files_by_folder('resources','teaching_videos')
     logged_in = session.get('resource_user_logged_in', False)
     return render_template('resources_list.html', category='教学视频', files=files,
@@ -218,20 +225,41 @@ from flask_babel import _
 
 @main.route('/resources/login', methods=['GET', 'POST'])
 def resource_login():
-    if request.method == 'POST':
-        username = request.form['username']
-        password = request.form['password']
+    # 从 query/form 统一获取 next；若无则用教材页
+    next_url = request.values.get('next') or url_for('main.resource_textbooks')
 
-        users = load_resource_users()
-        user = next((u for u in users if u['username'] == username), None)
-
-        if user and check_password_hash(user['password_hash'], password):
-            session['resource_user_logged_in'] = True
-            return redirect(url_for('main.resource_textbooks'))
+    # 简单校验，防止跳到站外；并限定到三个受保护资源页之一
+    allowed = {
+        url_for('main.resource_textbooks'),
+        url_for('main.resource_study_videos'),
+        url_for('main.resource_teaching_videos'),
+    }
+    if not next_url.startswith('/'):
+        next_url = url_for('main.resource_textbooks')
+    if next_url not in allowed:
+        # 允许传入 /resources/xxx 的纯路径
+        if next_url in {"/resources/textbooks", "/resources/study_videos", "/resources/teaching_videos"}:
+            pass
         else:
-            return render_template('resource_login.html', error=_("用户名或密码错误"))
+            next_url = url_for('main.resource_textbooks')
 
-    return render_template('resource_login.html')
+    if request.method == 'GET':
+        # 把 next 传给模板，让表单带回
+        return render_template('resource_login.html', next=next_url)
+
+    # POST: 校验用户
+    username = request.form['username']
+    password = request.form['password']
+
+    users = load_resource_users()
+    user = next((u for u in users if u['username'] == username), None)
+
+    from werkzeug.security import check_password_hash
+    if user and check_password_hash(user['password_hash'], password):
+        session['resource_user_logged_in'] = True
+        return redirect(next_url)
+    else:
+        return render_template('resource_login.html', error=_("用户名或密码错误"), next=next_url)
 
 @main.route('/resources/logout')
 def resource_logout():
