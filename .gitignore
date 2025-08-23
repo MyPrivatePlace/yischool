@@ -15,10 +15,12 @@
 #resource_users.json
 
 # 忽略 Python 虚拟环境
-venv/
+.venv/
+.env
 __pycache__/
 *.pyc
-
+*.egg-info/
+*.py[cod]
 
 # 忽略日志
 *.log
