@@ -1,14 +1,14 @@
 # 忽略所有视频文件
-*.mp4
+#*.mp4
 *.mov
 *.avi
 *.mkv
 
 # 忽略资源上传目录
-/static/resources/teaching_videos/*
-/static/resources/study_videos/*
-/static/resources/ourvideos/*
-/static/school/works/*
+#app/static/resources/**/*.mp4
+#app/static/school/works/*.mp4
+#/static/resources/**/*.mp4
+#/static/school/works/*.mp4
 
 # 忽略私密文件
 #admin_users.json
