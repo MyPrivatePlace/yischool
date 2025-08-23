@@ -109,7 +109,7 @@ button:hover {
 
 /* Hero 横幅区 */
 .hero {
-    background-image: url('/static/images/hero_bg.jpg');
+    background-image: url('/static/images/hero_bg.JPG');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
