@@ -34,6 +34,9 @@ msgstr "Welkom bij Yi school"
 msgid "Dit is een Chinese weekendschool die zich richt op Chinese gezinnen."
 msgstr ""
 
+msgid "如涉及版权和肖像权，请联系我们进行删除"
+msgstr "Indien dit materiaal inbreuk maakt op auteursrechten of portretrechten, verzoeken wij u vriendelijk om contact met ons op te nemen zodat wij het kunnen verwijderen."
+
 msgid "课程设置"
 msgstr "Cursusoverzicht"
 
@@ -75,7 +78,6 @@ msgstr "Standaard Chinese les"
 
 msgid "少年中文班"
 msgstr "Chinese les voor jongeren"
-
 
 msgid "荷兰语班"
 msgstr "Nederlandse taalcursus"
@@ -182,8 +184,8 @@ msgstr "Diplomaat van de Afdeling Chinees van de Universiteit van Nanjing, heeft
 msgid "毕业于中科院，从事海外华文教育近二十年，教学经验丰富，能不断启发孩子们的创造想象力,让孩子们更有兴趣学习中文。"
 msgstr "Diplomaat van de Chinese Akademie van Wetenschappen, heeft bijna twintig jaar ervaring in het onderwijs van het Chinees in het buitenland. Ze heeft veel onderwijservaring en kan de creatieve verbeelding van kinderen voortdurend stimuleren, waardoor kinderen meer interesse krijgen in het leren van het Chinees."
 
-msgid "就读于乌特勒支大学青少年儿童心理，热爱教学，希望通过自己的努力，让越来越多的华人孩子们学会中文。"
-msgstr "Student psychologie van tieners en kinderen aan de Universiteit van Utrecht, houdt van onderwijs en hoopte dat met zijn inspanningen steeds meer Chinese kinderen het Chinees graag willen leren."
+msgid "就读于乌特勒支大学青少年儿童心理，热爱教学，希望和各位老师一起，让越来越多的华人孩子们学会中文。"
+msgstr "Student psychologie van tieners en kinderen aan de Universiteit van Utrecht, houdt van onderwijs en hoopte dat samenwerk met de collega's steeds meer Chinese kinderen het Chinees graag willen leren."
 
 msgid "毕业于沈阳药科大学药学系及荷兰青白中医学院，致力传播中华文化，推广应用中医理论知识。"
 msgstr "Diplomaat van de Afdeling Farmacie van de Shenyang Pharmaceutische Universiteit en de Nederlandse Qingbai Chinese Geneeskunde Akademie, is toegewijd aan de verspreiding van de Chinese cultuur en de popularisering en toepassing van kennis over de theorie van de Chinese geneeskunde."
