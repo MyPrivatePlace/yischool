@@ -51,7 +51,19 @@ nav ul li a {
 nav ul li a:hover {
     color: #0077cc;
 }
-
+/* 多级下拉菜单基础 */
+.navbar .dropdown-menu { border-radius: 10px; }
+.dropdown-submenu { position: relative; }
+.dropdown-submenu > a::after {
+  content: "▸"; font-size: 10px; margin-left: 6px;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0; left: 100%; margin-left: .2rem; margin-right: .2rem;
+}
+/* 可选：悬停展开（桌面端友好） */
+@media (hover:hover) {
+  .dropdown-submenu:hover > .dropdown-menu { display: block; }
+}
 /* 表格 */
 table {
     width: 100%;
@@ -544,3 +556,20 @@ footer {
     margin: 0 auto;
   }
 }
+
+/* ==== Bootstrap 多级下拉支持 ==== */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+

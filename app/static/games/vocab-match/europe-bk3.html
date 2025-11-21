@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>配对游戏 · 中文（欧洲版）第3册</title>
+
+  <!-- 使用相对路径，防止 /static 在某些环境下被拦截或改写 -->
+  <link rel="stylesheet" href="../../css/vocab-match.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1 id="page-title">配对游戏</h1>
+      <p class="muted">选择课次与卡牌数量，点击开始。</p>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <!-- 课次多选 -->
+    <div class="ctrl">
+      <label>选课次</label>
+      <div class="ms" id="lesson-ms">
+        <button type="button" id="lesson-btn">已选 2 课 ▾</button>
+        <div class="panel" id="lesson-panel"></div>
+        <div class="hint">勾选“全部课次”或勾选若干具体课</div>
+      </div>
+    </div>
+
+    <!-- 本局配对数 -->
+    <div class="ctrl">
+      <label>本局配对数（对）</label>
+      <input id="pair-count" type="number" min="2" max="30" value="12">
+    </div>
+
+    <!-- 优先图片 -->
+    <div class="ctrl">
+      <label>优先图片</label>
+      <select id="prefer-image">
+        <option value="auto">开启（尽可能使用图片）</option>
+        <option value="off">关闭（只用释义）</option>
+      </select>
+    </div>
+
+    <!-- 背面显示课次 -->
+    <div class="ctrl">
+      <label>背面显示课次</label>
+      <select id="show-back-lesson">
+        <option value="on" selected>显示</option>
+        <option value="off">不显示</option>
+      </select>
+    </div>
+
+    <!-- ✅ 把按钮放这列的末尾 -->
+    <div class="ctrl" style="align-self:end;">
+      <button class="btn" id="start-btn">开始 / 重新</button>
+    </div>
+  </div>
+
+  <section class="stats" id="stats">
+    <div class="chip">⏱️ 用时：<span id="time">00:00</span></div>
+    <div class="chip">🎯 步数：<span id="steps">0</span></div>
+    <div class="chip">✅ 已配对：<span id="matched">0</span>/<span id="total">0</span></div>
+  </section>
+
+  <section class="board-wrap">
+    <div id="board" class="board"></div>
+  </section>
+
+  <!-- 本局词汇表（可展开） -->
+  <section class="legend" style="max-width:1100px; margin:16px auto; padding:12px 16px;">
+    <details id="vocab-summary">
+      <summary style="cursor:pointer; font-weight:800;">本局词汇表（点击展开/收起）</summary>
+      <div id="vocab-list" style="margin-top:10px;"></div>
+    </details>
+  </section>
+  
+  <section class="legend">
+    <details>
+      <summary>规则说明</summary>
+      <div class="vlist">
+        <div class="vitem">每次翻两张卡牌，若匹配成功则保留。</div>
+        <div class="vitem">匹配规则：同一词条的「文字/拼音/释义/图片」配成一对。</div>
+        <div class="vitem">可勾选多课次，系统会随机抽取。</div>
+      </div>
+    </details>
+  </section>
+
+  <!-- 引擎脚本（先） -->
+  <script src="../../js/vocab-match.js"></script>
+  <!-- 数据脚本（后） -->
+  <script src="../../js/europe-bk3-data.js"></script>
+  <script>
+    document.getElementById('page-title').textContent = (window.VOCAB_DATA && window.VOCAB_DATA.title) || '配对游戏';
+    VocabMatch.init(window.VOCAB_DATA);
+  </script>
+</body>
+</html>

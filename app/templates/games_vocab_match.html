@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container py-4">
+  <a href="{{ url_for('main.index') }}" class="btn btn-secondary mb-3">← 返回首页</a>
+  <h2 class="mb-4">{{ _('词语碰碰对') }}</h2>
+  <div class="list-group">
+    {% for g in games %}
+      <a class="list-group-item list-group-item-action" href="{{ g.href }}" target="_blank" rel="noopener">
+        {{ g.title }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

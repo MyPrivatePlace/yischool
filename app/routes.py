@@ -218,6 +218,27 @@ def resource_ourvideos():
 
     return render_template('resources_list.html', category='教学素材', videos=videos, page=page, total_pages=total_pages, folder='ourvideos')
 
+@main.route('/games/vocab-match')
+def games_vocab_match():
+    games = [
+        {"title": "中文欧洲版第1册配对", "href": url_for('static', filename='games/vocab-match/europe-bk1.html')},
+        {"title": "中文欧洲版第2册配对", "href": url_for('static', filename='games/vocab-match/europe-bk2.html')},
+        {"title": "中文欧洲版第3册配对", "href": url_for('static', filename='games/vocab-match/europe-bk3.html')},
+        {"title": "中文欧洲版第4册配对", "href": url_for('static', filename='games/vocab-match/europe-bk4.html')},
+        {"title": "中文欧洲版第5册配对", "href": url_for('static', filename='games/vocab-match/europe-bk5.html')},
+        {"title": "中文欧洲版第6册配对", "href": url_for('static', filename='games/vocab-match/europe-bk6.html')},        
+    ]
+    return render_template('games_vocab_match.html', games=games)
+
+# 若需要登录限制，这里同样加装饰器
+@main.route('/games/othergame/')
+def games_othergame():
+    games = [
+        {"title": "词语接龙（示例）", "href": url_for('static', filename='games/othergame/index.html')},
+        # 以后可继续追加
+    ]
+    return render_template('games_othergame.html', games=games)
+
 import json
 from werkzeug.security import check_password_hash
 from flask import request, render_template, session, redirect, url_for
