@@ -1,4 +1,4 @@
-window.VOCAB_DATA = {
+const VOCAB_DATA = {
   title: "配对游戏 · 中文（欧洲版）第5册",
 
   // ✅ 用对象包含 id 和 title；id 与 words[*].lesson 对应
